@@ -6,7 +6,6 @@ RUN chmod 777 /usr/src/app
 RUN apk update
 RUN apk upgrade
 RUN apk add --upgrade mkvtoolnix
-RUN apk add --upgrade wget
 RUN git clone https://github.com/pjjacob98/lib
 
 COPY requirements.txt .
