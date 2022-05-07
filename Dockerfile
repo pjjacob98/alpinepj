@@ -6,6 +6,7 @@ RUN chmod 777 /usr/src/app
 RUN apt update -y
 RUN apt upgrade -y
 RUN apt install -y python3-pip
+RUN apt install -y procps
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
