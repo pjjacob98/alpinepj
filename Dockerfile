@@ -4,8 +4,8 @@ WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
 RUN apt-get update
-RUN apt upgrade -y
-RUN apt install -y python3-module-pip
+RUN apt-get upgrade
+RUN apt-get install python3-module-pip
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
