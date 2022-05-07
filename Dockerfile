@@ -5,6 +5,7 @@ RUN chmod 777 /usr/src/app
 
 RUN apk update
 RUN apk upgrade
+RUN apk add --upgrade py3-pip
 RUN apk add --upgrade mkvtoolnix
 
 COPY requirements.txt .
