@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
 RUN echo "defaultyes=True" >> /etc/dnf/dnf.conf
-RUN dnf upgrade --refresh
+RUN dnf update -y
 RUN dnf install python39-pip
 RUN dnf install procps-ng
 
