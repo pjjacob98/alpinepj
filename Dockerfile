@@ -3,8 +3,7 @@ FROM archlinux:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN pacman -R pyqt5-common
-RUN pacman -Syu -y
+RUN pacman -Syu --no-confirm
 RUN echo "[extra]" >> /etc/pacman.conf
 RUN echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 RUN pacman -Syu
