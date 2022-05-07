@@ -4,7 +4,6 @@ WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
 RUN apt-get update
-RUN apt-get upgrade
 RUN apt-get install python3-module-pip
 
 COPY requirements.txt .
