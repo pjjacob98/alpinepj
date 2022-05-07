@@ -3,7 +3,7 @@ FROM archlinux:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN pacman -Syu
+RUN pacman -Syu -y
 RUN echo "[extra]" >> /etc/pacman.conf
 RUN echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 RUN pacman -Syu
