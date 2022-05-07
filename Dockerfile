@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
