@@ -7,6 +7,7 @@ RUN apk update
 RUN apk upgrade
 RUN apk add --upgrade py3-pip
 RUN apk add --upgrade mkvtoolnix
+RUN apk add --upgrade bash
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
