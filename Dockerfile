@@ -3,7 +3,7 @@ FROM alt:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN apt update -y
+RUN apt-get update
 RUN apt upgrade -y
 RUN apt install -y python3-module-pip
 
