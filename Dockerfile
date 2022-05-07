@@ -1,9 +1,11 @@
-FROM almalinux:latest
+FROM alt:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN dnf install python39-pip
+RUN apt update -y
+RUN apt upgrade -y
+RUN apt install -y python3-module-pip
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
