@@ -1,12 +1,10 @@
-FROM debian:latest
+FROM almalinux:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN apt update -y
-RUN apt upgrade -y
-RUN apt install -y python3-pip
-RUN apt install -y procps
+RUN dnf install procps-ng
+RUN dnf install python39-pip
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
