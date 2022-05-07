@@ -3,7 +3,6 @@ FROM archlinux:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN pacman -Syyu --no-confirm
 RUN echo "[extra]" >> /etc/pacman.conf
 RUN echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 RUN pacman -S python-pip
