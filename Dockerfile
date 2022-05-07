@@ -3,7 +3,6 @@ FROM almalinux:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
-RUN dnf install procps-ng
 RUN dnf install python39-pip
 
 COPY requirements.txt .
