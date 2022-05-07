@@ -1,11 +1,11 @@
-FROM rockylinux:latest
+FROM mageia:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
 RUN echo "defaultyes=True" >> /etc/dnf/dnf.conf
 RUN dnf update -y
-RUN dnf install python39-pip
+RUN dnf install python3-pip
 RUN dnf install procps-ng
 
 COPY requirements.txt .
