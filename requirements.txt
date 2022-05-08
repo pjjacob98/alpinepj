@@ -1,2 +1,2 @@
 pyTelegramBotApi
-tgcrypto
+cryptg
