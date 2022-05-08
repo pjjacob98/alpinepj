@@ -14,7 +14,7 @@ RUN apk add --no-cache autoconf automake libtool cython pkgconf
 RUN apk add --no-cache git nasm yasm zlib
 RUN apk add --no-cache fftw-dev zlib-dev
 RUN apk add --no-cache boost1.77-filesystem boost1.77-system
-RUN git clone https://github.com/vapoursynth/vapoursynth.git ; cd vapoursynth ; ./autogen.sh ; ./configure ; make ; make install
+RUN git clone https://github.com/vapoursynth/vapoursynth.git ; cd vapoursynth ; ./autogen.sh
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
