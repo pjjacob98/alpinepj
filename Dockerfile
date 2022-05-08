@@ -5,6 +5,7 @@ RUN chmod 777 /usr/src/app
 
 RUN apk update
 RUN apk upgrade
+ENV PYTHONPATH /usr/lib/python3.9/site-packages
 RUN apk add --no-cache py3-pip
 RUN apk add --no-cache bash
 RUN apk add --no-cache procps
