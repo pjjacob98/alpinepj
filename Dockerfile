@@ -11,6 +11,8 @@ RUN apk add --no-cache procps
 RUN apk add --no-cache build-base
 RUN apk add --no-cache sudo wget curl ffmpeg mkvtoolnix mediainfo
 RUN apk add --no-cache cmake
+RUN apk add --no-cache opencl-icd-loader-dev
+RUN apk add --no-cache boost-dev
 RUN apk add --no-cache autoconf automake libtool cython pkgconf
 RUN apk add --no-cache git nasm yasm zlib
 RUN apk add --no-cache fftw-dev zlib-dev
