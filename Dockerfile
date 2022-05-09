@@ -11,9 +11,6 @@ RUN apk add --no-cache build-base boost-dev
 RUN apk add --no-cache sudo cmake wget curl ffmpeg mkvtoolnix mediainfo
 RUN apk add --no-cache opencl-headers opencl-icd-loader-dev
 RUN apk add --no-cache autoconf automake libtool cython pkgconf git nasm yasm fftw-dev zlib-dev
-RUN pip3 install -U telegram-upload
-RUN apk add --no-cache x264-dev x264 x265-dev x265 libvpx-dev libvpx
-RUN git clone https://git.ffmpeg.org/ffmpeg.git ; cd ffmpeg ; ./configure --enable-gpl --enable-libx264 --enable-libx265 --enable-libvpx ; make ; make install
 RUN git clone https://github.com/sekrit-twc/zimg ; cd zimg ; ./autogen.sh ; ./configure ; make ; make install
 RUN git clone https://github.com/vapoursynth/vapoursynth.git ; cd vapoursynth ; ./autogen.sh ; ./configure ; make ; make install
 RUN wget -O adjust.py "https://www.googleapis.com/drive/v3/files/118lZQzqo6dHKLH_lTiXJMGOb6MJ7cwYi?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "adjust.py" "/usr/local/lib/python3.10/site-packages"
