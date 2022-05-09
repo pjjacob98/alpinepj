@@ -16,4 +16,4 @@ jobs:
           heroku_app_name: "alpinepj" #Must be unique in Heroku
           heroku_email: "prajithjacob98@gmail.com"
           usedocker: true
-          docker_heroku_process_type: worker
+          docker_heroku_process_type: web
