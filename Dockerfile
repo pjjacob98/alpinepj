@@ -13,11 +13,11 @@ RUN apk add --no-cache opencl-headers opencl-icd-loader-dev
 RUN apk add --no-cache autoconf automake libtool cython pkgconf git nasm yasm fftw-dev zlib-dev
 RUN git clone https://github.com/sekrit-twc/zimg ; cd zimg ; ./autogen.sh ; ./configure ; make ; make install
 RUN git clone https://github.com/vapoursynth/vapoursynth.git ; cd vapoursynth ; ./autogen.sh ; ./configure ; make ; make install
-RUN wget -O adjust.py "https://www.googleapis.com/drive/v3/files/118lZQzqo6dHKLH_lTiXJMGOb6MJ7cwYi?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "adjust.py" "/usr/local/lib/python3.9/site-packages"
-RUN wget -O havsfunc.py "https://www.googleapis.com/drive/v3/files/115cp64FBg--UP5p-87_1Tc5bQW0VHPc9?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "havsfunc.py" "/usr/local/lib/python3.9/site-packages"
-RUN wget -O mvsfunc.py "https://www.googleapis.com/drive/v3/files/1147iKrs1vKzGfMvblA0L_2wVAIRiPG_l?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "mvsfunc.py" "/usr/local/lib/python3.9/site-packages"
-RUN wget -O nnedi3_resample.py "https://www.googleapis.com/drive/v3/files/10yh4KfWI1NX6rqrLoSm1zRINbzgej4e4?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "nnedi3_resample.py" "/usr/local/lib/python3.9/site-packages"
-RUN wget -O nnedi3aa.py "https://www.googleapis.com/drive/v3/files/1142Q-NKvQF7w840gn6dL9eUmmfpIynh5?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "nnedi3aa.py" "/usr/local/lib/python3.9/site-packages"
+RUN wget -O adjust.py "https://www.googleapis.com/drive/v3/files/118lZQzqo6dHKLH_lTiXJMGOb6MJ7cwYi?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "adjust.py" "/usr/lib/python3.9/site-packages"
+RUN wget -O havsfunc.py "https://www.googleapis.com/drive/v3/files/115cp64FBg--UP5p-87_1Tc5bQW0VHPc9?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "havsfunc.py" "/usr/lib/python3.9/site-packages"
+RUN wget -O mvsfunc.py "https://www.googleapis.com/drive/v3/files/1147iKrs1vKzGfMvblA0L_2wVAIRiPG_l?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "mvsfunc.py" "/usr/lib/python3.9/site-packages"
+RUN wget -O nnedi3_resample.py "https://www.googleapis.com/drive/v3/files/10yh4KfWI1NX6rqrLoSm1zRINbzgej4e4?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "nnedi3_resample.py" "/usr/lib/python3.9/site-packages"
+RUN wget -O nnedi3aa.py "https://www.googleapis.com/drive/v3/files/1142Q-NKvQF7w840gn6dL9eUmmfpIynh5?alt=media&key=AIzaSyB3lrh7-RHcAZIZnc68i5_-sQdvmrDyIrw" ; cp "nnedi3aa.py" "/usr/lib/python3.9/site-packages"
 RUN git clone https://github.com/pjjacob98/lib
 
 COPY requirements.txt .
