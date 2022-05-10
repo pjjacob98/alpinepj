@@ -10,7 +10,7 @@
 [GENERAL]
 
 ; token - This is bot auth token, necessary to connect bot to Telegram sevice.
-token=5381103717:AAH5QMHzHEljbS35gaPlxZDh5NP80MJwYh4
+token=5309511285:AAEVO3IVKKlSz7YhiaIOE4z04R_q7MDhC58
 
 
 ; password - New users will need to use it in order to access to the service.
@@ -57,8 +57,8 @@ enable_root=False
 
 ; forbidden_commands - List of unavaliable commands. Add here commands that
 ; throw errors, unexpected behaviour, etc...
-forbidden_commands=["apt-get","aptitude","bash","clear","dc","ex","exit",
-                    "expand","htop","man","nano","poweroff","raspi-config",
+forbidden_commands=["apt-get","aptitude","bash","dc","ex","exit",
+                    "expand","htop","poweroff","raspi-config",
                     "reboot","scp","shutdown","ssh","vi","vim","wait",
                     "watch", "wc"
                     ]
