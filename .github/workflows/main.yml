@@ -13,7 +13,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "torrentpj3" #Must be unique in Heroku
-          heroku_email: "prajithjacob98@gmail.com"
+          heroku_app_name: "testalpine" #Must be unique in Heroku
+          heroku_email: "pjjacob98heroku@radiosuperfm.net"
           usedocker: true
           docker_heroku_process_type: worker
