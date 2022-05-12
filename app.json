@@ -1,7 +1,0 @@
-{
-    "name": "alpinepj",
-    "description": "alpine",
-    "keywords": ["shell", "telegram", "docker", "bot"],
-    "repository": "https://github.com/pjjacob98/alpinepj",
-    "stack": "container"
-}
