@@ -1,4 +1,2 @@
 build:
     context: .
-deploy:
-  - bash start.sh
