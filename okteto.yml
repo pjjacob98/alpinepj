@@ -1,5 +1,4 @@
 build:
     context: .
-    dockerfile: Dockerfile
-    deploy:
+deploy:
   - bash start.sh
