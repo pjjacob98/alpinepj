@@ -3,4 +3,4 @@ build:
 deploy:
   - 
 dev:
-    
+    command: bash start.sh
