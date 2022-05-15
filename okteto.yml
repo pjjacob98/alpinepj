@@ -2,3 +2,5 @@ build:
     context: .
 deploy:
   - 
+dev:
+    context: .
