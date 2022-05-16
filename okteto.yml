@@ -3,4 +3,5 @@ build:
 deploy:
   - 
 dev:
+    command: bash
     
