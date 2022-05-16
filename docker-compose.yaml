@@ -1,4 +1,6 @@
-services:
-  web:
-    build: .
-    command: bash start.sh
+build:
+    context: .
+deploy:
+  - 
+dev:
+    
