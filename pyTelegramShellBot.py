@@ -832,5 +832,7 @@ def main():
 if __name__ == "__main__":
     print("Bot running...")
     signal(SIGINT)
-    main()
-    idle()
+
+initialize()
+main()
+idle()
