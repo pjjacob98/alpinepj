@@ -1,7 +1,0 @@
-build:
-    context: .
-    target: dev
-deploy:
-  - 
-dev:
-    
