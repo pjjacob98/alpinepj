@@ -1,6 +1,9 @@
 build:
-    context: .
+  api:
+    context: api
 deploy:
   - 
 dev:
+  api:
+  
     
