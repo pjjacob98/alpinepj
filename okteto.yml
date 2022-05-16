@@ -1,5 +1,9 @@
 build:
     context: .
 deploy:
+  -
+dev:
     command: ["bash", "start.sh"]
+    forward:
+      - 8080:8080
     
