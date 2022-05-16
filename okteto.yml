@@ -1,6 +1,7 @@
 build:
   api:
     context: api
+    dockerfile: Dockerfile
 deploy:
   - 
 dev:
