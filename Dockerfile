@@ -12,6 +12,7 @@ RUN apk add --no-cache sudo cmake wget curl ffmpeg mkvtoolnix mediainfo
 RUN apk add --no-cache opencl-headers opencl-icd-loader-dev
 RUN apk add --no-cache autoconf automake libtool cython pkgconf git nasm yasm fftw-dev zlib-dev
 RUN git clone https://github.com/pjjacob98/libs
+RUN pip3 install speedtest-cli
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
