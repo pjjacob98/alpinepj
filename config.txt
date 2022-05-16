@@ -10,7 +10,7 @@
 [GENERAL]
 
 ; token - This is bot auth token, necessary to connect bot to Telegram sevice.
-token=5309511285:AAHJZvaEaGG-hc2BMF1LJQu_C7O0XM5yhMA
+token=5309511285:AAGyJoOBvwU3mv2swMzQFc7bvs8tLu_Ya4k
 
 ; password - New users will need to use it in order to access to the service.
 ; Logged users ID will be stored in users.txt. If there are users stored and
