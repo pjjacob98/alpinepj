@@ -1,7 +1,5 @@
 build:
     context: .
 deploy:
-  - 
-dev:
-    command: ["bash"]
+    command: ["bash", "start.sh"]
     
