@@ -1,6 +1,3 @@
 services:
   web:
     build: .
-    command: speedtest-cli
-    ports:
-      - "8080:80"
