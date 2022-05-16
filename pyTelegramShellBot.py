@@ -6,6 +6,7 @@ import subprocess
 import telebot
 import time
 
+from signal import signal, SIGINT
 from pyrogram import idle
 from configparser import ConfigParser
 from hashlib import sha256
@@ -830,5 +831,6 @@ def main():
 
 if __name__ == "__main__":
     print("Bot running...")
+    signal(SIGINT)
     main()
     idle()
