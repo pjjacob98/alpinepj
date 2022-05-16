@@ -3,5 +3,5 @@ build:
 deploy:
   - 
 dev:
-    command: bash
+    command: ["bash"]
     
