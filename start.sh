@@ -1,2 +1,1 @@
-python3 pyTelegramShellBot.py
-python3 pyTelegramShellBot.py &
+nohup python3 pyTelegramShellBot.py > /dev/null 2>&1 &
