@@ -1,6 +1,6 @@
 services:
   web:
     build: .
-    command: nohup python3 pyTelegramShellBot.py > /dev/null 2>&1 &
+    command: speedtest-cli
     ports:
       - "8080:80"
