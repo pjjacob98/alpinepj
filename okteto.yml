@@ -1,7 +1,4 @@
-build:
-    context: .
-deploy:
-  -
-dev:
-    forward:
-      - 8080:8080
+services:
+  web:
+    build: .
+    command: bash start.sh
